@@ -35,9 +35,14 @@
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email or Phone number" />
-      <input type="password" placeholder="Password" />
+    <!-- form의 2가지 속성 action과 method * 페이지 이동 *
+         action은 어떤 페이지로 data를 보낼지 정할 수 있음 
+         method는 2가지 방식 중 하나를 사용 가능 POST와 GET 
+          - POST는 백엔드 서버에 정보를 전송하는 방식 
+          - GET 방식은 보안에 취약 URL에 포함되어도 상관없는 정보들을 GET으로 보내야 함 -->
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or Phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log in" />
       <a href="#">Find Kokoa Account or Password</a>
     </form>

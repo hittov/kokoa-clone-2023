@@ -1,28 +1,20 @@
 /* google font에서 css와 font 설정해서 import 가능 */
 /* css hack 일종의 레시피 같은 것 이상하지만 어디서든 써먹을 수 있다 */
 /* 브라우저의 기본 css를 리셋 시켜서 직접 디자인 하는걸 추천 reset.css
-   각각의 css파일을 만들어서 style.css에 import하는 방법을 추천 */
+   각각의 css파일을 만들어서 style.css에 import하는 방법을 추천 파일 import 순서 중요 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import "reset.css";
-@import "status-bar.css";
+@import "variables.css";
+
+/* Components 요소*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/* screnns */
+@import "screens/login.css";
+/* style.css에는 모든 스크린에 적용될 수 있는 스타일을 써놓기 */
 body {
     font-family: 'Open Sans', sans-serif;
+  
 }
 
-.welcome-header {
-    margin: 90px 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.welcome-header__title {
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-
-.welcome-header__text{
-    width: 60%;
-    opacity: 0.7;
-}
