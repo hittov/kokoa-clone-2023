@@ -1,0 +1,56 @@
+.screen-header__icons {
+    position: relative;
+}
+
+.screen-header__icons--dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: -5px;
+    top: -8px;
+}
+
+.herder__notification {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+.find-icons {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.find-icons__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.find-icons__icon i {
+    font-size: 35px;
+}
+
+.find-icons__icon span {
+    margin-top: 18px;
+}
+
+.recommended-friends {
+    margin: 25px 0px;
+    padding: 25px 0px;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+    font-size: 14px;
+    color: var(--main-text);
+}
+
+.recommended-friends span { /* span은 inline margin 적용 x block으로 change*/
+    margin: 100px 0px;
+    display: block;
+    text-align: center;
+    color: var(--main-text);
+}

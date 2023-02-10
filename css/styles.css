@@ -8,13 +8,23 @@
 
 /* Components 요소*/
 @import "components/status-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
 @import "components/nav-bar.css";
 
 /* screnns */
 @import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+
 /* style.css에는 모든 스크린에 적용될 수 있는 스타일을 써놓기 */
 body {
+    color: #2e363e;
     font-family: 'Open Sans', sans-serif;
   
 }
 
+.main-screen {
+    padding: 0px var(--horizontal-space);
+}
