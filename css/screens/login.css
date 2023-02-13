@@ -46,7 +46,7 @@
 
 /* cursor: pointer, progress, not-allowed 등 */
 #login-form input[type="submit"] {
-    background-color: var(--yellow);
+    background-color: red;
     cursor: pointer;
     padding: 20px 0px;
     border-radius: 5px;
