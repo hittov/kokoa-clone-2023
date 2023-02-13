@@ -123,3 +123,24 @@
 .open-post__heart-count span {
     margin-left: 3px;
 }
+
+/* will-cange 기본적으로 브라우저에게 뭔가 바뀔꺼라고 말해준다 
+   컴퓨터 그래픽카드를 이용해서 애니메이션을 가속화 할 수 있다 - 애니메이션을 좀 더 부드럽게 */
+@keyframes heartBeat {
+    0%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100%{
+        color: white;
+    }
+}
+
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
+}
