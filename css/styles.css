@@ -9,14 +9,19 @@
 /* Components 요소*/
 @import "components/status-bar.css";
 @import "components/screen-header.css";
+@import "components/alt-screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/nav-bar.css";
+@import "components/icon-raw.css";
 
 /* screnns */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
+@import "screens/more.css";
+@import "screens/setting.css";
+@import "screens/chat.css";
 
 /* style.css에는 모든 스크린에 적용될 수 있는 스타일을 써놓기 */
 body {
