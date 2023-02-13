@@ -16,6 +16,7 @@
 
 .friends-screen {
     padding:0px var(--horizontal-space);
+    height: 100vh;
 }
 
 .friends-screen__channel {
@@ -25,11 +26,15 @@
 }
 
 .friends-screen__channel-header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     color: var(--main-text);
 }
+
+.friends-screen__friends .user-component{
+    margin-bottom: 20px;
+  }
 
 @keyframes hideSplashScreen {
     from {
@@ -45,7 +50,7 @@
     'opacity: 0;' 이면 보이진않지만 element는 남아있지만 'visibility: hidden;' 을 주게 되면
     마우스에 걸리지 않게 빠져버리기 때문에 클릭이 가능해짐 */
 #splash-screen {
-    background-color: var(--yellow);
+    background-color: yellow;
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -55,5 +60,5 @@
     align-items: center;
     font-size: 132px;
     animation: hideSplashScreen 0.3s ease-in-out forwards;
-    animation-delay: 2s; /* 애니메이션 딜레이 */
+    animation-delay: 0.5s; /* 애니메이션 딜레이 */
 }

@@ -35,12 +35,18 @@
     margin-bottom: 10px;
 }
 
+.more-suggestions__icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .more-suggestions__icon-image {
     font-size: 32px;
     color: white;
 }
 
-.user-component__icon {
-    color: tomato;
-    opacity: 1;
-}
